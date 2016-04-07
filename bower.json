@@ -1,21 +1,19 @@
 {
-  "name": "xmastree",
-  "version": "0.0.1",
+  "name": "tannenbaum",
+  "version": "0.0.0",
   "dependencies": {
+    "angular-ui-router": "ui-router#^0.2.18",
     "angular": "^1.5.0",
-    "bootstrap": "^3.2.0",
-    "angular-animate": "^1.4.0",
-    "angular-cookies": "^1.4.0",
-    "angular-resource": "^1.4.0",
-    "angular-route": "^1.4.0",
-    "angular-sanitize": "^1.4.0",
-    "angular-touch": "^1.4.0"
+    "angular-bootstrap": "^1.2.5",
+    "bootstrap": "~3.3.6",
+    "angular-momentjs": "^0.2.2",
+    "font-awesome": "fontawesome#^4.5.0"
   },
   "devDependencies": {
-    "angular-mocks": "^1.4.0"
+    "angular-mocks": "^1.5.0"
   },
   "appPath": "app",
-  "moduleName": "xmastreeApp",
+  "moduleName": "tannenbaumApp",
   "overrides": {
     "bootstrap": {
       "main": [
