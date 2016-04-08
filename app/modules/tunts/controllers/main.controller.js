@@ -12,5 +12,5 @@ function mainController ($filter) {
     'Karma'
   ];
 
-  this.filtered = $filter('tuntsFilter')(this.awesomeThings[0]) + 'O';
+  this.filtered = $filter('tuntsFilter')(this.awesomeThings[0]);
 }
