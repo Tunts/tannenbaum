@@ -33,9 +33,19 @@
 <!-- endbuild -->
 
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
-<script src="scripts/app.js"></script>
-<script src="scripts/controllers/main.js"></script>
-<script src="scripts/config/routes.js"></script>
+<script src="modules/app.js"></script>
+
+<!-- common -->
+<script src="modules/common/module.js"></script>
+
+<!-- yeoman -->
+<script src="modules/yeoman/module.js"></script>
+<script src="modules/yeoman/config/routes.config.js"></script>
+<script src="modules/yeoman/controllers/main.controller.js"></script>
+<script src="modules/yeoman/directives/yeoman.directive.js"></script>
+<script src="modules/yeoman/filters/yeoman.filter.js"></script>
+<script src="modules/yeoman/services/yeoman.service.js"></script>
+
 <!-- endbuild -->
 </body>
 </html>

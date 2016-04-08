@@ -11,9 +11,9 @@ module.exports = function(grunt) {
 			expand: true
 		},
 		base_html: {
-			cwd: 'app/views/',
-			src: '**/*.html',
-			dest: 'dist/views/',
+			cwd: 'app/modules/',
+			src: '*/views/*.html',
+			dest: 'dist/modules/',
 			expand: true
 		},
     images: {
@@ -34,6 +34,18 @@ module.exports = function(grunt) {
 			dest: 'dist/lib/css/',
 			expand: true
 		},
+    bootstrap_css_map: {
+      cwd: 'bower_components/bootstrap/dist/css/',
+      src: 'bootstrap.min.css.map',
+      dest: 'dist/lib/css/',
+      expand: true
+    },
+    bootstrap_theme_css_map: {
+      cwd: 'bower_components/bootstrap/dist/css/',
+      src: 'bootstrap-theme.min.css.map',
+      dest: 'dist/lib/css/',
+      expand: true
+    },
 		font_awesome_css: {
 			cwd: 'bower_components/components-font-awesome/css/',
 			src: 'font-awesome.min.css',

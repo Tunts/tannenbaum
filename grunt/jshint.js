@@ -5,6 +5,6 @@ module.exports = function(grunt) {
 			jshintrc: '.jshintrc',
 			reporter: require('jshint-stylish')
 		},
-		test: ['app/scripts/**/*.js']
+		test: ['app/modules/**/*.js']
 	});
 };
