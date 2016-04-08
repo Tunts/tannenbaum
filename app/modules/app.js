@@ -9,4 +9,4 @@
  * Main module of the application.
  */
 angular
-  .module('tannenbaumApp', ['ui.router', 'common', 'yeoman']);
+  .module('tannenbaumApp', ['ui.router', 'common', 'tunts']);

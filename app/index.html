@@ -8,7 +8,8 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -19,16 +20,18 @@
 <!--[if lte IE 8]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
   your browser</a> to improve your experience.</p>
-<![endif]-->
 
 <!-- Add your site or application content here -->
 <div ui-view></div>
 <!-- build:js(.) scripts/vendor.js -->
 <!-- bower:js -->
-<script src="../bower_components/jquery/dist/jquery.js"></script>
-<script src="../bower_components/angular/angular.js"></script>
-<script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
-<script src="../bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/moment/moment.js"></script>
+<script src="bower_components/angular-momentjs/angular-momentjs.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
 
@@ -39,12 +42,12 @@
 <script src="modules/common/module.js"></script>
 
 <!-- yeoman -->
-<script src="modules/yeoman/module.js"></script>
-<script src="modules/yeoman/config/routes.config.js"></script>
-<script src="modules/yeoman/controllers/main.controller.js"></script>
-<script src="modules/yeoman/directives/yeoman.directive.js"></script>
-<script src="modules/yeoman/filters/yeoman.filter.js"></script>
-<script src="modules/yeoman/services/yeoman.service.js"></script>
+<script src="modules/tunts/module.js"></script>
+<script src="modules/tunts/config/routes.config.js"></script>
+<script src="modules/tunts/controllers/main.controller.js"></script>
+<script src="modules/tunts/directives/tunts.directive.js"></script>
+<script src="modules/tunts/filters/tunts.filter.js"></script>
+<script src="modules/tunts/services/tunts.service.js"></script>
 
 <!-- endbuild -->
 </body>
