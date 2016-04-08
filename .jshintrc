@@ -1,16 +1,22 @@
 {
-  "bitwise": true,
-  "browser": true,
-  "curly": true,
   "eqeqeq": true,
-  "esnext": true,
-  "latedef": true,
+  "latedef": "nofunc",
   "noarg": true,
-  "node": true,
-  "strict": true,
   "undef": true,
   "unused": true,
+  "boss": true,
+  "eqnull": true,
+  "node": true,
+  "bitwise": true,
+  "strict": true,
+  "maxcomplexity": 5,
+  "maxstatements": 20,
+  "maxdepth": 5,
   "globals": {
-    "angular": false
+    "isObject": false,
+    "angular": false,
+    "window": false,
+    "StringMask": false,
+    "$": false
   }
 }
