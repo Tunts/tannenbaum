@@ -422,10 +422,24 @@ module.exports = function (grunt) {
       unit: {
         configFile: 'test/karma.conf.js',
         singleRun: true
+      }, e2e: {
+        configFile: 'test/karma.e2e.conf.js',
+        singleRun: true
+      }
+    },
+
+    protractor: {
+      continuous: {
+        options: {
+          configFile: "test/protractor.conf.js",
+          keepAlive: true
+        }
       }
     }
   });
 
+  grunt.loadNpmTasks('grunt-protractor-runner');
+  grunt.registerTask('protractor', ['connect', 'protractor']);
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -453,7 +467,8 @@ module.exports = function (grunt) {
     'concurrent:test',
     'postcss',
     'connect:test',
-    'karma'
+    'karma',
+    'protractor'
   ]);
 
   grunt.registerTask('build', [
