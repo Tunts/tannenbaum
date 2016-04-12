@@ -119,7 +119,6 @@ module.exports = function (grunt) {
     },
 
 
-
     // Make sure there are no obvious mistakes
     jshint: {
       options: {
@@ -439,7 +438,7 @@ module.exports = function (grunt) {
         noColor: false,
 
         // Additional arguments that are passed to the webdriver command
-        args: { }
+        args: {}
       },
       e2e: {
         options: {
@@ -508,7 +507,7 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'newer:jshint',
     'newer:jscs',
-    'test',
-    'build'
+    'build',
+    'test'
   ]);
 };
