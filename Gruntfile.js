@@ -118,6 +118,8 @@ module.exports = function (grunt) {
       }
     },
 
+
+
     // Make sure there are no obvious mistakes
     jshint: {
       options: {
@@ -429,9 +431,23 @@ module.exports = function (grunt) {
     },
 
     protractor: {
+      options: {
+        // Location of your protractor config file
+        configFile: 'test/protractor.conf.js',
+
+        // Do you want the output to use fun colors?
+        noColor: false,
+
+        // Additional arguments that are passed to the webdriver command
+        args: { }
+      },
+      e2e: {
+        options: {
+          keepAlive: false
+        }
+      },
       continuous: {
         options: {
-          configFile: "test/protractor.conf.js",
           keepAlive: true
         }
       }
@@ -439,7 +455,7 @@ module.exports = function (grunt) {
   });
 
   grunt.loadNpmTasks('grunt-protractor-runner');
-  grunt.registerTask('protractor', ['connect', 'protractor']);
+  grunt.registerTask('prot', ['protractor:continuous']);
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
     if (target === 'dist') {
@@ -468,7 +484,7 @@ module.exports = function (grunt) {
     'postcss',
     'connect:test',
     'karma',
-    'protractor'
+    'prot'
   ]);
 
   grunt.registerTask('build', [

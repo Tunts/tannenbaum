@@ -3,7 +3,7 @@ exports.config = {
   // node ./node_modules/grunt-protractor-runner/node_modules/protractor/bin/webdriver-manager update
 
   specs: [
-    './test/protractor/*.prot.js'
+    './protractor/**/*.prot.js'
   ],
 
   // configure multiple browsers to run tests
