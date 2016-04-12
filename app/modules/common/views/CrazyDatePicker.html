@@ -1,0 +1,10 @@
+<p class="input-group">
+  <input id="crazy-date-picker" ng-disabled="ngDisabled" type="text" ng-model="model" us-date
+         class="form-control input-sm" ng-required="crazyRequired"/>
+    <span class="input-group-btn" tabindex="-1">
+        <button ng-disabled="ngDisabled" type="button" class="btn btn-sm" tabindex="-1" ng-click="open($event)"><i
+          class="glyphicon glyphicon-calendar"></i></button>
+    </span>
+</p>
+<input type="text" ng-disabled="ngDisabled" class="crazy-date-picker-hidden-input" datepicker-popup="MM/dd/yyyy"
+       ng-model="model" is-open="opened" tabindex="-1" close-text="Close"/>
