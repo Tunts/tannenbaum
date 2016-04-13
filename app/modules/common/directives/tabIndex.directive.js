@@ -11,7 +11,7 @@ angular.module('common')
   .directive('firstTabIndex', [function () {
     return {
       restrict: 'A',
-      require: ['^tabIndex'],
+      require: '^tabIndex',
       link: function (scope, element, attrs, ctrl) {
         var id = attrs.firstTabIndex || 'firstTabIndex';
         ctrl[id] = element;
@@ -32,7 +32,7 @@ angular.module('common')
   .directive('lastTabIndex', [function () {
     return {
       restrict: 'A',
-      require: ['^tabIndex'],
+      require: '^tabIndex',
       link: function (scope, element, attrs, ctrl) {
         var id = attrs.lastTabIndex || 'firstTabIndex';
         ctrl['_' + id] = element;
