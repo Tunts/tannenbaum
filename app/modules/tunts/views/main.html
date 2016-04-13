@@ -34,7 +34,8 @@
       Always a pleasure scaffolding your apps. {{mainCtrl.filtered}}
     </p>
 
-    <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+    <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span
+      class="glyphicon glyphicon-ok"></span></a></p>
   </div>
 
   <div class="row marketing">
@@ -54,8 +55,14 @@
 
     <p>Spectacular Test Runner for JavaScript.</p>
 
-    <input type="text" ng-model="test2" auto-focus="">
-    <crazy-date-picker ng-model="test" crazy-required="true" ng-disabled="false"></crazy-date-picker>
+    <button type="button" class="btn btn-default">
+      <span class="glyphicon glyphicon-remove"></span> Cancel
+    </button>
+
+    <button type="button" id="btn-information-confirm" class="btn btn-default">
+      <span class="glyphicon glyphicon-check"></span> Confirm
+    </button>
+    <input ng-model="data" type="text">
   </div>
 
 </div>
