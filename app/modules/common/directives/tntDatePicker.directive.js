@@ -10,7 +10,8 @@ angular.module('common')
       scope: {
         model: '=ngModel',
         tntRequired: '=tntRequired',
-        ngDisabled: '=?tntDisabled'
+        ngDisabled: '=?tntDisabled',
+        datepickerOptions:'=datepickerOptions'
       },
       controller: ['$scope', function ($scope) {
 
@@ -25,6 +26,10 @@ angular.module('common')
         };
       }],
       link: function (scope) {
+        //remove warnings in console
+        console.log()
+        scope.datepickerOptions = scope.datepickerOptions ? scope.datepickerOptions : {minDate: null, maxDate: null};
+
         if (!scope.ngDisabled) {
           scope.ngDisabled = false;
         }
@@ -34,7 +39,7 @@ angular.module('common')
 
           scope.model = !scope.model ? new Date() : scope.model;
 
-          scope.opened = true;
+          scope.opened = !scope.opened;
           scope.closeOthers(scope);
 
         };

@@ -82,7 +82,7 @@ body {
   }
 }
 
-.crazy-date-picker-hidden-input {
+.tnt-date-picker-hidden-input {
   width: 0;
   height: 0;
   padding: 0;
