@@ -4,8 +4,8 @@
 angular.module('tunts')
   .controller('MainCtrl', mainController);
 
-mainController.$inject = ['$filter'];
-function mainController ($filter) {
+mainController.$inject = ['$filter', 'AlertService'];
+function mainController ($filter,AlertService) {
   this.awesomeThings = [
     'tunts',
     'AngularJS',
@@ -15,4 +15,8 @@ function mainController ($filter) {
   this.filtered = $filter('tuntsFilter')(this.awesomeThings[0]);
 
   this.options = {minDate: new Date(), maxDate: new Date('04/30/2016')};
+
+  this.openAlert = function(msg){
+    AlertService.alertInformation(msg);
+  }
 }

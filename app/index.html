@@ -8,8 +8,8 @@
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css(.) styles/vendor.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.css"/>
   <!-- endbower -->
   <!-- endbuild -->
   <!-- build:css(.tmp) styles/main.css -->
@@ -38,9 +38,6 @@
 <!-- build:js({.tmp,app}) scripts/scripts.js -->
 <script src="modules/app.js"></script>
 
-<!-- common -->
-<script src="modules/common/module.js"></script>
-
 <!-- yeoman -->
 <script src="modules/tunts/module.js"></script>
 <script src="modules/tunts/config/routes.config.js"></script>
@@ -50,12 +47,21 @@
 <script src="modules/tunts/services/tunts.service.js"></script>
 
 <!--common module-->
+<script src="modules/common/module.js"></script>
+
 <script src="modules/common/directives/tabIndex.directive.js"></script>
 <script src="modules/common/directives/tntEnter.directive.js"></script>
 <script src="modules/common/directives/autofocus.directive.js"></script>
 <script src="modules/common/directives/usDate.directive.js"></script>
 <script src="modules/common/directives/currency.directive.js"></script>
 <script src="modules/common/directives/tntDatePicker.directive.js"></script>
+
+<script src="modules/common/services/alert.service.js"></script>
+
+<script src="modules/common/controllers/modalAlert.controller.js"></script>
+<script src="modules/common/controllers/modalConfirm.controller.js"></script>
+<script src="modules/common/controllers/modalDelete.controller.js"></script>
+<script src="modules/common/controllers/modalTwoOptions.controller.js"></script>
 
 <!-- endbuild -->
 </body>
