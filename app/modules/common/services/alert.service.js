@@ -27,7 +27,7 @@ function alertService($uibModal) {
       backdrop: 'static',
       templateUrl: 'modules/common/views/modalTwoOptions.html',
       controller: 'ModalTwoOptionsController',
-      size: 'sm',
+      size: 'md',
       resolve: {
         options: function () {
           return options;
