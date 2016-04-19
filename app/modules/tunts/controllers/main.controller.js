@@ -13,4 +13,6 @@ function mainController ($filter) {
   ];
 
   this.filtered = $filter('tuntsFilter')(this.awesomeThings[0]);
+
+  this.options = {minDate: new Date(), maxDate: new Date('04/30/2016')};
 }
